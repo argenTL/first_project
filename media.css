@@ -1,0 +1,56 @@
+@media screen and (max-width: 992px){
+
+    /*///////----------"Услуги" сайта---------//////*/
+    #border-none2{
+        border-right: none;
+    }
+    .services__box{
+        padding: 30px;
+    }
+
+    /*///////----------"Категории продуктов"---------//////*/
+
+    .product-categories__title{
+        padding: 50px 0;
+    }
+    .product-categories .img,
+    .product-categories .img2{
+        height: 200px;
+    }
+
+    .product-categories .text_category{
+        top: 38%;
+    }
+
+}
+@media screen and (max-width: 767px){
+
+    /*///////----------"Услуги" сайта---------//////*/
+
+    #border-none1,
+    #border-none3{
+        border-right: none;
+    }
+
+    /*///////----------"Категории продуктов"---------//////*/
+
+
+}
+@media screen and (max-width: 572px){
+
+    /*///////----------"Услуги" сайта---------//////*/
+
+    .services{
+        padding: 80px 0;
+    }
+
+    /*///////----------"Категории продуктов"---------//////*/
+
+    .product-categories__title{
+        padding: 30px 0;
+    }
+    .product-categories .img,
+    .product-categories .img2{
+        height: 170px;
+    }
+}

@@ -1,0 +1,177 @@
+body{
+    font-family: 'Relewey', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+
+/*///////----------"Шапка" сайта---------//////*/
+.top{
+    box-shadow: 0 10px 15px #dee2e659;
+    background: rgba(252, 253, 254, 0.95);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.top__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top nav{
+    display: flex;
+    align-items: center;
+}
+.nav__menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav__menu li{
+    list-style: none;
+    padding: 0 35px;
+}
+.nav__menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px transparent;
+    transition: .3s ease-in;
+}
+.nav__menu a:hover{
+    color: black;
+    border-bottom: solid 2px #ffba00;
+}
+.offcanvas.offcanvas-top {
+    height: 80px;
+    top: 10px;
+    left: 50vw;
+}
+.top button{
+    padding: 5px;
+    margin-left: 20px;
+    background: white;
+    border: solid 1px #eeeeee;
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+    transition: .3s ease-in-out;
+}
+.top button:hover{
+    border: solid 1px rgba(255, 186, 0, 0.30);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(221, 235, 221, 0.66);
+}
+.top button:active{
+    border: solid 1px #ffba00;
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+}
+/*///////----------"Бургер" сайта---------//////*/
+.nav__menu-burger .offcanvas button img{
+
+}
+.nav__menu-burger ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+
+}
+.nav__menu-burger li{
+    list-style: none;
+}
+.nav__menu-burger a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px transparent;
+}
+.nav__menu-burger a:hover{
+    color: #ffba00;
+    border-bottom: solid 2px #ffba00;
+}
+
+
+
+/*///////----------"Contact"---------//////*/
+section{
+    height: 700px;
+    align-items: center;
+}
+.contact{
+    display: flex;
+    align-content: center;
+}
+section .info{
+    display: flex;
+    align-items: center;
+}
+section .text{
+    padding-left: 20px;
+}
+section h4{
+    font-size: 16px;
+    margin: 0;
+}
+section p{
+    margin: 0;
+    font-size: 14px;
+}
+
+section form{
+    display: flex;
+    justify-content: space-between;
+}
+section label.one{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 40%;
+}
+section label input{
+    padding: 5px 14px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+section label textarea{
+    padding: 5px 20px;
+    width: 400px;
+    height: 160px;
+    margin-bottom: 30px;
+}
+section button{
+    padding: 10px 25px;
+    background: #ffba00;
+    border: 2px solid transparent;
+    transition: .2s ease;
+}
+section button:active{
+    border: 2px solid black;
+}
+/*///////----------"Footer"---------//////*/
+footer{
+    padding: 60px 0 20px;
+    background: rgba(10, 21, 30, 0.49);
+    scroll-snap-align: start;
+}
+footer li{
+    list-style: none;
+    padding: 8px 20px;
+    border-right: 1px solid #eeeeee;
+
+}
+footer li:first-child{
+    border-left: 1px solid #eeeeee;
+}
+footer li:hover img,
+footer li:hover svg{
+    transform: scale(1.2);
+}
+
+

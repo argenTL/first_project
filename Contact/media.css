@@ -1,0 +1,25 @@
+@media screen and (max-width: 992px){
+    section label textarea{
+        width: 300px;
+        height: 120px;
+    }
+    section label.one{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 767px){
+
+    section label.one{
+        width: 40%;
+    }
+
+}
+@media screen and (max-width: 572px){
+    section form{
+        flex-direction: column;
+    }
+    section label.one{
+        width: 100%;
+    }
+}
+

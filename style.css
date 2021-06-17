@@ -1,0 +1,292 @@
+body{
+    font-family: 'Relewey', sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+
+
+/*///////----------"Шапка" сайта---------//////*/
+.top{
+    box-shadow: 0 10px 15px #dee2e659;
+    background: rgba(252, 253, 254, 0.95);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.top__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top nav{
+    display: flex;
+    align-items: center;
+}
+.nav__menu ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+.nav__menu li{
+    list-style: none;
+    padding: 0 35px;
+}
+.nav__menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px transparent;
+    transition: .3s ease-in;
+}
+.nav__menu a:hover{
+    color: black;
+    border-bottom: solid 2px #ffba00;
+}
+.offcanvas.offcanvas-top {
+    height: 80px;
+    top: 10px;
+    left: 50vw;
+}
+.top button{
+    padding: 5px;
+    margin-left: 20px;
+    background: white;
+    border: solid 1px #eeeeee;
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+    transition: .3s ease-in-out;
+}
+.top button:hover{
+    border: solid 1px rgba(255, 186, 0, 0.30);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(221, 235, 221, 0.66);
+}
+.top button:active{
+    border: solid 1px #ffba00;
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+}
+/*///////----------"Бургер" сайта---------//////*/
+.nav__menu-burger .offcanvas button img{
+
+}
+.nav__menu-burger ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+
+}
+.nav__menu-burger li{
+    list-style: none;
+}
+.nav__menu-burger a{
+    text-decoration: none;
+    color: black;
+    font-size: 40px;
+    padding-bottom: 4px;
+    border-bottom: solid 2px transparent;
+}
+.nav__menu-burger a:hover{
+    color: #ffba00;
+    border-bottom: solid 2px #ffba00;
+}
+
+
+
+/*///////----------"Супер-акции" сайта---------//////*/
+.carousel-item{
+    height: 400px;
+}
+.carousel-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.text_sale{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background: url("images/banner-bg.jpg") center / cover no-repeat ;
+}
+header{
+    background: rgba(221,235,221,0.41);
+}
+.super_sale .card-body{
+    background: rgba(221, 234, 221, 0.56);
+    width: auto;
+    color: black;
+}
+.super_sale .btn_buy{
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    background: #e00017;
+    transition: .2s ease;
+}
+.super_sale .btn_buy:active{
+    color: white;
+    border: 2px solid #0d1e29;
+}
+
+
+/*///////----------"Услуги" сайта---------//////*/
+.services{
+    padding: 140px 0;
+}
+.services__box{
+    padding: 50px;
+    border: solid 1px #eeeeee;
+    box-shadow: 0 10px 20px rgba(221, 235, 221, 0.66);
+    transform: translateY(15px);
+    transition: .3s ease-in-out;
+}
+.services__box:hover{
+    transform: translateY(0);
+    box-shadow: 0 15px 35px rgba(221, 235, 221, 0.80);
+}
+.services__box__card{
+    text-align: center;
+    border-right: solid 1px rgba(8, 21, 21, 0.41);
+}
+.services__box__card img:hover{
+    transform: scale(1.2);
+    opacity: 0.7;
+    cursor: pointer;
+}
+#border-none4{
+    border-right: none;
+}
+
+
+
+/*///////----------"Категории продуктов"---------//////*/
+
+.product-categories__title{
+    padding: 80px 0;
+}
+*{
+    transition: .3s ease-in-out;
+}
+.product-categories .img{
+    height: 250px;
+    position: relative;
+}
+.product-categories .img2{
+    position: relative;
+}
+.product-categories .img:hover img,
+.product-categories .img2:hover img{
+    opacity: 0.3;
+}
+.product-categories img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product-categories .text_category{
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0, 0);
+    z-index: -2;
+}
+.product-categories .img:hover .text_category,
+.product-categories .img2:hover .text_category{
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+.product-categories .text_category a{
+    text-decoration: none;
+    color: #ffba00;
+    text-transform: uppercase;
+}
+.product-categories .img2 .text_category a{
+    color: red;
+}
+.product-categories h4{
+    font-size: 26px;
+    font-weight: 700;
+}
+
+
+
+    /*///////----------"Продукты"---------//////*/
+.products{
+    padding: 120px 0;
+}
+.products__title{
+    padding: 70px;
+}
+.products .card{
+    border: solid 1px #eeeeee;
+    box-shadow: 0 8px 20px rgba(221, 235, 221, 0.66);
+    transform: translateY(5px);
+    transition: .3s ease-in-out;
+}
+.products .card:hover{
+    transform: translateY(0);
+    box-shadow: 0 10px 30px rgba(221, 235, 221, 0.80);
+}
+.products button{
+    padding: 5px 25px;
+    background: white;
+    border: solid 1px #eeeeee;
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+    transition: .3s ease-in-out;
+}
+.products button:hover{
+    border: solid 1px rgba(255, 186, 0, 0.30);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(221, 235, 221, 0.66);
+}
+.products button:active{
+    border: solid 1px #ffba00;
+    transform: translateY(0);
+    box-shadow: 0 5px 10px rgba(221, 235, 221, 0.66);
+}
+
+
+
+/*///////----------"Бренды"---------//////*/
+.brands{
+    padding: 20px 0 70px;
+}
+.brands img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brands img:hover{
+    opacity: 0.4;
+}
+
+/*///////----------"Footer"---------//////*/
+footer{
+    padding: 60px 0 20px;
+    background: rgba(10, 21, 30, 0.49);
+}
+footer li{
+    list-style: none;
+    padding: 8px 20px;
+    border-right: 1px solid #eeeeee;
+
+}
+footer li:first-child{
+    border-left: 1px solid #eeeeee;
+}
+footer li:hover img,
+footer li:hover svg{
+    transform: scale(1.2);
+}
+
+
